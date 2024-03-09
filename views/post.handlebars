@@ -1,0 +1,28 @@
+<div class="post-details">
+    <h1>{{post.title}}</h1>
+    <p>{{post.content}}</p>
+    {{#if post.user}}
+        <p>Creator: {{post.user.username}}</p>
+    {{/if}}
+    <p>Date Created: {{post.createdAt}}</p>
+</div>
+
+<form action="/api/posts/{{post.id}}/comments" method="POST" class="comment-form">
+    <textarea name="commentText" rows="4" cols="50" placeholder="Leave a comment"></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+{{#if post.comments.length}}
+    <h2>Comments</h2>
+    <ul class="comments-list">
+        {{#each post.comments as |comment|}}
+        <li class="comment">
+            <p>{{comment.commentText}}</p>
+            {{#if comment.commentUser}}
+                <p>Comment by: {{comment.commentUser.username}}</p>
+            {{/if}}
+            <p>Date Created: {{comment.createdAt}}</p>
+        </li>
+    {{/each}}
+    </ul>
+{{/if}}
