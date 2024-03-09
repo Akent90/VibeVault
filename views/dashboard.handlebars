@@ -1,0 +1,23 @@
+<main class="dashboard-container">
+<h1>Dashboard</h1>
+
+{{#if userPosts}}
+    <ul class="dashboard-list">
+        {{#each userPosts as |post|}}
+            <li class="dashboard-post">
+                <h2><a href="/posts/{{post.id}}">{{post.title}}</a></h2>
+                <p>{{post.content}}</p>
+                <a href="/dashboard/edit/{{post.id}}" class="btn">Edit</a>
+
+                <form action="/dashboard/delete/{{post.id}}" method="POST">
+                    <input type="submit" value="Delete" class="btn">   
+                </form>
+            </li>
+        {{/each}}
+    </ul>
+    <a href="/create">Create New Post</a>
+{{else}}
+    <p>You have not created any posts yet.</p>
+    <a href="/create">Create A New Playlist</a>
+{{/if}}
+</main>
