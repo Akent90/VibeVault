@@ -1,0 +1,46 @@
+# Dependency directories
+node_modules/
+
+# Environment configuration
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*~
+*.lock
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directories
+/dist
+/tmp
+/out
+
+# Production
+/build
+
+# Local development
+.cache/
+.next/
