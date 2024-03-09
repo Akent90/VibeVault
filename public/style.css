@@ -1,0 +1,309 @@
+html, body, ul, ol, li, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-list {
+    list-style-type: none;
+}
+
+.post, .dashboard-post {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.post-title, .dashboard-post h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.post-content, .dashboard-post p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.dashboard-container {
+    max-width: 800px; /* Adjust to fit your design */
+    margin: auto;
+    padding: 20px;
+}
+
+.dashboard-post .btn, .dashboard-post form {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.dashboard-post .btn, .dashboard-post input[type="submit"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.dashboard-post .btn:hover, .dashboard-post input[type="submit"]:hover {
+    background-color: #f8f8f8;
+    border-color: #bbb;
+}
+
+.form-delete {
+    display: inline;
+    margin: 0;
+}
+
+.form-delete input[type="submit"] {
+    border: inherit;
+    padding: inherit;
+    background-color: inherit;
+    border-radius: inherit;
+    margin-right: 0;
+}
+
+.post-details {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.comment-form textarea,
+.comment-form button {
+    display: block;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+.comment-form button {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.comment-form button:hover {
+    background-color: #f8f8f8;
+    border-color: #bbb;
+}
+
+.comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.post-details {
+    background-color: #fff;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+.comment-form textarea,
+.comment-form button {
+    display: block; 
+    width: calc(100% - 40px); 
+    margin-bottom: 10px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comment-form textarea {
+    height: 100px; 
+    padding: 10px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+
+.comment-form button {
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.comment-form button:hover {
+    background-color: #e7e7e7; 
+    border-color: #bbb; 
+}
+
+.comments-list {
+    list-style-type: none; 
+    padding: 0; 
+    margin-top: 20px; 
+}
+
+.comment {
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 20px; 
+    margin-bottom: 10px; 
+}
+
+.login-container {
+    width: 300px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.login-container h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.login-container form div {
+    margin-bottom: 15px; 
+}
+
+.login-container label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: calc(100% - 10px); 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.login-container button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.login-container button:hover {
+    background-color: #e7e7e7; 
+}
+
+.login-container a {
+    display: block; 
+    text-align: center;
+    margin-top: 20px; 
+    color: #0066cc; 
+    text-decoration: none; 
+}
+
+.login-container a:hover {
+    text-decoration: underline; 
+}
+
+.create-container {
+    width: 400px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.create-container h1 {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.create-container form .form-group {
+    margin-bottom: 15px; 
+}
+
+.create-container form label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+
+.create-container form input[type="text"],
+.create-container form textarea {
+    width: calc(100% - 10px); 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.create-container form button {
+    width: 100%; 
+    padding: 10px; 
+    background-color: #f8f8f8; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+}
+
+.create-container form button:hover {
+    background-color: #e7e7e7; 
+}
